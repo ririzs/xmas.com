@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loveee</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+        }
+
+        .header {
+            margin-top: 20px;
+            font-size: 2rem;
+            color: #ff1717;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+
+        .message-box {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+
+        .message-box p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .buttons {
+            margin: 20px auto;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            background: #00b400;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .decorative-text {
+            font-size: 1.5rem;
+            color: #920000;
+            margin: 20px 0;
+        }
+
+        .flower-left, .flower-right {
+            position: absolute;
+            top: 20px;
+            width: 60px;
+        }
+
+        .flower-left {
+            left: 0;
+        }
+
+        .flower-right {
+            right: 0;
+        }
+
+        .icon {
+            margin: 10px;
+        }
+
+        #hidden-message {
+            display: none;
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #5c645c;
+            font-weight: bold;
+        }
+
+        .picture-gallery {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .picture-gallery img {
+            max-width: 100px;
+            margin: 5px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .spotify-link {
+            margin-top: 20px;
+        }
+
+        .spotify-link a {
+            color: #1db954;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .spotify-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Bengala de Natal com fita Adesivo de desenho animado em estilo cômico com ilustração vetorial de contorno _ Vetor Premium.jpg" alt="Flower" class="flower-left">
+        <img src="download (12).jpg" alt="Flower" class="flower-right">
+
+        <div class="header">Merry Christmas Babyyy!!!</div>
+
+        <div class="message-box">
+            <p>I can't believe it will be a year since we met each other, and it's been 8 months since we are officially together. 
+                Time flies so fast, and I can't wait to celebrate more years with you. Merry Christmas, love. I love you. </p>
+        </div>
+
+        <div class="buttons">
+            <button class="button" onclick="showMessage('Hi lovee. Tigo eon kung pano mag butang hehe. Sincerely, this is our first Christmas together, which is why, im so happy, and i hope this will not be the last. Im looking forward to welcoming a new year with you. Im so thankful that I got to meet you. I wouldnt be this happy if I hadnt, and im not even joking. Meeting you is the best thing that ever happened to me this year. Im forever glad that you are always with me. Thank you, baby. PS di ako kagamit apostrophe hshsh.')">01 - First Message</button>
+            <button class="button" onclick="showMessage('Our relationship is not smooth sailing, and we have experienced challenges, and this may be cringe, but Im always scared if we get into these kinds of situations. I dont want to lose you, which is why I keep overthinking even the smallest thing. Honestly, Im sorry for the times that Im too much to handle. Im not that expressive but i always try my best. I hope that even when we get into this situation, we will still choose to fix it and strengthen our relationship. I love you always, baby. ')">02 — I love you.</button>
+            <button class="button" onclick="showMessage('Last but not least, for another year ahead of us, I wish you success and happiness. I will pray you achieve all the things that you want and get the things that you yearn for. Always remember that no matter what happens, I will always support you. I always got your back, so do what you need to do. If you need someone, Im always here, ready to listen and help. Merry Christmas ulit hihi, I love you.')">03 — Click me!</button>
+        </div>
+
+        <div id="hidden-message"></div>
+
+        <div class="decorative-text">
+            <span>Sending you all my love and best wishes for a joyous holiday season and a prosperous New Year!</span>
+        </div>
+
+        <div class="picture-gallery">
+            <h3>Our Favorite Moment</h3>
+            <img src="489a9df2-b490-4e11-9af4-01ca178358a1.jpg" alt="Photo 1">
+            <img src="50c029e3-7689-4247-acc7-77bd0e0224be.jpg" alt="Photo 2">
+            <img src="cec49b1d-1891-49b1-891d-a3d5454f0f5b.jpg" alt="Photo 3">
+            
+        </div>
+
+        <div class="spotify-link">
+            <h3>Listen to this Song</h3>
+            <a href="https://open.spotify.com/track/0bYg9bo50gSsH3LtXe2SQn?si=5Bxa5sPLTR6Cm0pKazkNFw" target="_blank">🎵 Click to Open Spotify 🎵</a>
+        </div>
+    </div>
+
+    <script>
+        function showMessage(message) {
+            const messageDiv = document.getElementById('hidden-message');
+            messageDiv.textContent = message;
+            messageDiv.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
